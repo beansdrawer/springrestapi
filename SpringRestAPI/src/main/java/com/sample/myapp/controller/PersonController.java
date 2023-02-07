@@ -48,7 +48,7 @@ public class PersonController {
 	}
 	
 	// 수정 요청 
-	@PutMapping(path="persons/{id}")
+	@PutMapping(path="/persons/{id}")
 	public Person updatePerson(@PathVariable Integer id, 
 			@RequestBody Person person) {
 		return service.updatePerson(id, person);
