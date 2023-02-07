@@ -15,9 +15,11 @@
 	</select>
 	
 	<insert id="insertPerson"
-	parameterType="com.sample.myapp.dto.Person">
-		INSERT INTO person (id, name, job) 
-		VALUES (#{id}, #{name}, #{job})
+	parameterType="com.sample.myapp.dto.Person"
+	useGeneratedKeys="true" keyProperty="id"
+	>
+		INSERT INTO person (name, job) 
+		VALUES (#{name}, #{job})
 	</insert>
 	
 	<update id="updatePerson">

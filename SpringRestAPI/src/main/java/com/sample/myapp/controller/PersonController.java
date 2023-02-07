@@ -60,7 +60,6 @@ public class PersonController {
 		return service.deletePerson(id);
 	}
 	
-	
 }
 
 
