@@ -7,4 +7,5 @@ public interface PersonService {
 	List<Person> getPersons();
 	Person getPerson(Integer id);
 	void insertPerson(Person person);
+	Person updatePerson(Integer id, Person person);
 }

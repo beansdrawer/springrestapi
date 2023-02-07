@@ -39,6 +39,21 @@ public class PersonServiceImpl implements PersonService {
 		dao.insertPerson(person);
 		
 	}
+
+	@Override
+	public Person updatePerson(Integer id, Person person) {
+		
+		Person updatedPerson = new Person();
+		
+		// SQL의 update는 갱신 성공한 레코드 수를 반환한다
+		if(dao.updatePerson(id, person) == 1) {
+			updatedPerson.setId(id);
+			updatedPerson.setName(person.getName());
+			updatedPerson.setJob(person.getJob());
+		}
+		
+		return updatedPerson;
+	}
 	
 
 }

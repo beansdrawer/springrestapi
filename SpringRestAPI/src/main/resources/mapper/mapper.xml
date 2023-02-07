@@ -20,4 +20,10 @@
 		VALUES (#{id}, #{name}, #{job})
 	</insert>
 	
+	<update id="updatePerson">
+		UPDATE person SET name=#{person.name}, job=#{person.job}
+		WHERE id=#{id}
+	</update>
+	
+	
 </mapper>
