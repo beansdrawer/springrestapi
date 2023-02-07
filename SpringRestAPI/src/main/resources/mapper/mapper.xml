@@ -25,5 +25,8 @@
 		WHERE id=#{id}
 	</update>
 	
+	<delete id="deletePerson" parameterType="int">
+		DELETE FROM person WHERE id=#{id}
+	</delete>
 	
 </mapper>

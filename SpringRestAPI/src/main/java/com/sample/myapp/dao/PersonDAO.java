@@ -15,4 +15,5 @@ public interface PersonDAO {
 	void insertPerson(Person person);
 	Integer updatePerson(@Param("id") Integer id, 
 			@Param("person") Person person);
+	Integer deletePerson(Integer id);
 }

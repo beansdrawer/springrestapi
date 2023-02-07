@@ -54,6 +54,12 @@ public class PersonServiceImpl implements PersonService {
 		
 		return updatedPerson;
 	}
+
+	@Override
+	public Integer deletePerson(Integer id) {
+		return dao.deletePerson(id);
+	}
+	
 	
 
 }

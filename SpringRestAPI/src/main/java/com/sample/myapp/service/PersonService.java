@@ -8,4 +8,5 @@ public interface PersonService {
 	Person getPerson(Integer id);
 	void insertPerson(Person person);
 	Person updatePerson(Integer id, Person person);
+	Integer deletePerson(Integer id);
 }
